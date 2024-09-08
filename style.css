@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b4664;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.top-row {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.top-row .col {
+  background-color: #181f32;
+
+  border-radius: 6px;
+  color: white;
+}
+
+.top-row .col input {
+  width: 100%;
+  background: transparent;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.btn-row {
+  padding: 14px;
+  background-color: #252c45;
+  border-radius: 6px;
+}
+
+.mid-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.mid-row .col,
+.mid-row .col button {
+  width: 100%;
+  height: 40px;
+}
+
+.mid-row .col button {
+  background-color: #eae3db;
+  border-radius: 3px;
+}
+
+.btm-row {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btm-row .col {
+  flex: 1 1 100%;
+}
+
+.btm-row .col button {
+  width: 100%;
+  height: 40px;
+}
+
+.mid-row .col button.del-btn,
+.btm-row .col button.reset-btn {
+  background-color: #647199;
+  color: #fff;
+}
+
+.btm-row .col button.eq-btn {
+  background-color: #d13f30;
+  color: #fff;
+}
